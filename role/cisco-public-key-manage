@@ -1,0 +1,30 @@
+[env]
+device = cisco
+mode = config
+# config     --> 2960(config)#
+# privilege  --> 2960#
+# login      --> <2960>
+
+[variable]
+user = FLH
+pubkey = ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAIEAvQcFQTWb12lALwxb6F8fX5/Yg/tkrqnOoxYKzgirzj7Hx70FkWu20OBlhPP2wluwBEFaWeoIj2Bt/W/MpYHqEYz1SHP95/xJl0PQmnKIPn+MhH4OREtCMb0JNYP7HlB91F9Z0XVmXodH6TVpdE0gc2Byc0vk7GD9Kqon/TOFXy0= Flh
+#user = SWZ
+#pubkey = ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAIEAzvzf4bbz3FC4WivSU3xl9YJttdOwt9jeOzrSFWt7PeoUlQi0Ql6HFt7wxs3drkfkaXR8H7gKJ4z46IRpPiQGddo4cWzPOJBNFsqz0SPvgWWG+YcT8aqiSfcYSFoGoQQiRxL1jxqveKN+nPVjX/VUYlqzZf2RBt8jI9GRQ4TtwEc= SWZ
+#user = HWB
+#pubkey = ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAIEAzuXL+b8xoeOhzx+zEY/new39Lr6k7KRxxYK1UulzIdJjyl0lsF0hK/DHC+uxL12XSJhzsRijVUX/9tz60IeCzDdBXGGNx5hMis/5DIS0K8sSoFH1zS8w5adgOVuThi4MdKZYcgDPKCOzs/Fu9pBkJVzFK8WBQ8WoUCGhpH5nxZ0= HWB
+# user = LSW
+# pubkey = ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAIEA0U06St76fjskvcy3RxrwZsy4fnm0MgQP23y0KSAeSlAWmemujNI08adJHW/7rbFFFPc9Dce3ezfgUnMOEFC3b594SGVT70NANEOgVhLFuQqu1KfJi+Ll6nKLFrDSxLjmKC9LmHoGb5DuW2yj/S36oquYUvUkfLRhVEt7fFoJLiU= LSW
+# user = LZP
+# pubkey = ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAIEArfWY/GaGmSeWEnPcf877styNKtRAAyOAeUfZI05qusmuNIbeopBYGj6mqakERhUQixNx3dfo62vV/5k35xUmxIWYYDniPx1FGQbuA9gWZAMZHaIYR1GAayZvER6+nThx7bhkXjT4/KKRnjBk/cFO0M5W9v1mTEG9db2QE7ha8gk=
+#user = CJL
+#pubkey = ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAIEA5QXbmhOoT8fjC1PZSwCvIhvvmaXXH+/Wx9yoJlM9wJMthFyI+jmaexxi92vzljdgC+GvYJy7VcSBRL/4CfZphmM2eyE0GSFdQ/YxGXWn29yBPWxQTcJ0+yP39kkNzq3/FN2S09iQJQXUWnJcuVOUh6VyorBmUXQoswDZ3zl6YqM= CJL
+
+
+[commands]
+cmd1 = username ${variable:user}
+cmd2 = ip ssh pubkey-chain
+cmd3 = username ${variable:user}
+cmd4 = key-string
+cmd5 = ${variable:pubkey}
+
+

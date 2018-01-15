@@ -1,0 +1,18 @@
+[env]
+device = cisco
+mode = config
+# config     --> 2960(config)#
+# privilege  --> 2960#
+# login      --> <2960>
+
+[variable]
+
+
+
+[commands]
+cmd1 = ip dhcp snooping
+cmd2 = ip dhcp snooping vlan 1-100
+cmd3 = ip dhcp relay information trust-all
+cmd4 = vtp version 3
+cmd5 = vtp password 12345678
+

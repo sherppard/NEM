@@ -1,0 +1,11 @@
+[env]
+device = cisco
+mode = config
+# config     --> 2960(config)#
+# privilege  --> 2960#
+# login      --> <2960>
+
+[variable]
+
+
+[commands]

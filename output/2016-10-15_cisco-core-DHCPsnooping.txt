@@ -1,0 +1,47 @@
+------------------------------------------------------------
+-----------------------172.16.13.254-----------------------
+------------------------------------------------------------
+
+-
+
+-----------------------------------------------------------------------
+
+ 
+
+WARNING:You are connected to the XYJ network device.
+
+Unauthorized access and use of this network will be vigorously prosecuted.
+
+ 
+
+-----------------------------------------------------------------------
+
+
+
+XYJ-C3850>
+
+XYJ-C3850>
+
+XYJ-C3850>en
+
+Password: 
+
+Password: 
+
+XYJ-C3850#config terminal
+
+Enter configuration commands, one per line.  End with CNTL/Z.
+
+XYJ-C3850(config)#ip dhcp snooping
+
+XYJ-C3850(config)#ip dhcp snooping vlan 1-100
+
+XYJ-C3850(config)#ip dhcp relay information trust-all
+
+XYJ-C3850(config)#vtp version 3
+
+XYJ-C3850(config)#vtp password 12345678
+
+Setting device VTP password to 12345678
+
+XYJ-C3850(config)#

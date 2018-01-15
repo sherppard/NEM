@@ -1,0 +1,23 @@
+[env]
+device = cisco_asa
+mode = privilege
+
+
+# device的参数，与在module的目录下文件名，去掉_mode.py
+# 前面的那段文字就是参数，比如 cisco_asa_mode.py
+# device = cisco_asa
+# mode的配置有以下几个参数
+
+# config     --> 2960(config)#
+# privilege  --> 2960#
+# login      --> <2960>
+
+[variable]
+
+
+
+[commands]
+cmd1 = show run nat
+cmd2 = show run object
+
+

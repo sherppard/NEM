@@ -1,0 +1,23 @@
+[env]
+device = cisco
+mode = privilege
+# config     --> 2960(config)#
+# privilege  --> 2960#
+# login      --> <2960>
+
+[variable]
+
+
+[commands]
+cmd0 = clear mac address-table dynamic
+cmd9 = conf t
+cmd1 = int range f0/1 - 48
+cmd10 = switchport mode access
+cmd2 = no cdp enable
+cmd3 = no vtp
+cmd4 = spann bpduguard enable
+cmd5 = switchport port-security
+cmd6 = switchport port-security mac-address sticky
+cmd7 = switchport port-security maximum 3
+cmd8 = switchport port-security violation shutdown
+

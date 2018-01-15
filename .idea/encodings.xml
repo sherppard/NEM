@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/config/ASA_port_mapping_config" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/config/config_all" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/config/core_correlation_config" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/config/correlation_config" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/role/asa_port_mapping" charset="GB2312" />
+  </component>
+</project>
