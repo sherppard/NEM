@@ -134,7 +134,7 @@ def do_mission(f_host, f_user, f_passwd):
 
     print 'host %s mission finished at %s .' % (f_host, time.ctime())
 
-_ne2m_des = '''
+_ne2m_des = u'''
 NE2M 是一个类似ansible的工具，但是NE2M只负责管理网络设备，不支持操作系统的管理。
 它只是要求的简单，易用，不仅可以在工作中使用，而且还可以供学习网络设备操作。
 '''
