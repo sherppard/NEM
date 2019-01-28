@@ -40,14 +40,14 @@ cmd2 = show run object
 ## config 配置  
 
   config 配置
-  
+```
   [run_config]  
   run            = cisco                     ; 运行哪些主机  
   login          = login_cisco               ; 登录的账号密码组  
   command-set    = cisco-public-key-manage   ; 运行哪一套命令集  
   save_config    = yes / no                  ; 是否保存配置  
   debug          = open / close              ; 是否开启调试功能  
-
+```
 
 ## script 任务启动脚本
 
