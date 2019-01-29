@@ -1,3 +1,4 @@
+[!] 生产环境谨慎使用！因对本工具的误操作导致的损失，项目作者不承担任何责任
 # NEM   [Network Equipment Manage]   使用指南
 cisco、huawei、h3c网络设备管理，类似ansible的用法，支持多线程下发命令，附带其他应用脚本  
 目前只支持SSH的方式，不支持Telnet, 以后也不会支持telnet，因为不安全
